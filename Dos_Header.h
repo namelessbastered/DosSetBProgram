@@ -1,3 +1,4 @@
+#pragma once
 #ifndef dos_h
 #define dos_h
 #define COUNT 8
@@ -22,5 +23,6 @@ struct Node* newNode(char* data);
 void print2DUtil(Node* root, int space);
 void print2D(Node* root);
 Node* search(Node* root, char* data);
-	
-#endif // !dos_h
+void downline(Node* root, char* tmpUpID, char* tmpID);
+
+#endif
